@@ -1,0 +1,113 @@
+body{
+  overflow-y: hidden;
+    overflow-x: hidden;
+  background:linear-gradient(45deg, #f0eadf, #f7e8cb)
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+.itensNavbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+
+
+.itensNavbar p{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+.itensNavbarIcons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+}
+
+.itensNavbarIcons img{
+  width: 30%;
+  height: 20px;
+}
+
+.itensNavbar{
+  background-color: none;
+}
+
+.containerContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.containerContentIMG{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.containerContentIMG img{
+  width: 90%;
+  height: 60vh;
+}
+
+.containerContentTEXT{
+  width: 40%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerContentTEXT h1{
+  width: 100%;
+}
+
+.containerContentTEXT p{
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  width: 90%;
+  font-weight: 600;
+}
+
+.containerContentTEXTInputBtn{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 20%;
+}
+
+.containerContentTEXTInputBtn input{
+  height: 60%;
+  width: 60%;
+  padding: 2%;
+  border: none;
+  border-radius: 5px;
+}
+
+.containerContentTEXTInputBtn button{
+  height:60%;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+}
+
+.containerContentLocaContat{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
