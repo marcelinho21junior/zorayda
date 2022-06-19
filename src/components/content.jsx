@@ -18,7 +18,7 @@ export default function Content() {
             <button>Sign Up</button>
         </div>
         <div className="containerContentLocaContat">
-            <div>
+            <div className="containerContentLocaContatLOCATION">
                 <h1>Location</h1>
                 <p>123 demo street</p>
                 <p>New york, ny 12345</p>

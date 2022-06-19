@@ -3,19 +3,19 @@ import '../App.css'
 import face from './img/facebook.png'
 import insta from './img/insta.png'
 
+import { BsFillEmojiHeartEyesFill, BsFillBugFill } from "react-icons/bs";
+
 export default function Navbar() {
   return (
-    <div className="">
       <div className='itensNavbar'>
         <div>
           <p>ZORAYDA</p>
         </div>
         <div className='itensNavbarIcons'>
-          <img src={face} alt="" />
-          <img src={insta} alt="" />
+          <BsFillBugFill />
+          <BsFillEmojiHeartEyesFill />
         </div>
       </div>
-    </div>
   )
 }
 

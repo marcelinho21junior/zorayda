@@ -1,13 +1,22 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
 body{
-  overflow-y: hidden;
-    overflow-x: hidden;
-  background:linear-gradient(45deg, #f0eadf, #f7e8cb)
+  background:linear-gradient(45deg, rgb(243, 222, 222), rgb(236, 203, 193))
 }
 
 .container{
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
   height: 100vh;
-  padding: 20px;
+  width: 100vw;
 }
 
 .itensNavbar{
@@ -30,6 +39,7 @@ body{
   justify-content: space-around;
   align-items: center;
   width: 10%;
+  cursor: pointer;
 }
 
 .itensNavbarIcons img{
@@ -46,7 +56,7 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 
 .containerContentIMG{
@@ -84,9 +94,9 @@ body{
 
 .containerContentTEXTInputBtn{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
-  width: 90%;
+  width: 100%;
   height: 20%;
 }
 
@@ -95,6 +105,7 @@ body{
   width: 60%;
   padding: 2%;
   border: none;
+  margin-right: 10px;
   border-radius: 5px;
 }
 
@@ -103,11 +114,73 @@ body{
   width: 30%;
   border: none;
   border-radius: 5px;
+  border: 3px solid rgb(145, 90, 75);
+  color:rgb(145, 90, 75) ;
 }
 
 .containerContentLocaContat{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
+}
+
+.containerContentLocaContat div{
+  margin-right: 40px;
+  width: 30%;
+}
+
+.containerContentLocaContat div h1{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.containerContentLocaContat div p{
+  font-size: 10px;
+  width: 100px;
+}
+
+/*Responsividade - celular*/
+@media(max-width:425px){
+ .container{
+  display: flex;
+  width: 100vw;
+ }
+ 
+ .containerContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+ }
+
+ .containerContentIMG{
+  width: 100%;
+ }
+
+ .containerContentIMG img{
+  width: 50%;
+  height: 90%;
+  border-radius: 10px;
+ }
+
+ .containerContentTEXT{
+  width: 100%;
+ }
+
+ .containerContentTEXTInputBtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 40%;
+ }
+
+ .containerContentTEXTInputBtn input{
+  margin-bottom: 20px;
+  padding-left: 40px;
+ }
+
+ .containerContentLocaContat{
+  display: none;
+ }
 }
